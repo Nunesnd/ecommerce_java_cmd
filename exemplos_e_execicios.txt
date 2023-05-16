@@ -1,0 +1,135 @@
+/*primeira amostra de comandos: Entrada e saída de dados
+        
+        BufferedReader reader = new BufferedReader(
+            new InputStreamReader(System.in)
+        );
+        
+        System.out.println("Informe seu nome:");
+        String name = reader.readLine();
+        
+        System.out.println( "Nome: " + name );
+        
+        System.out.println("Número 1 ou X:");
+        int num1 = Integer.parseInt(reader.readLine());
+        System.out.println("Número 2 ou Y:");
+        int num2 = Integer.parseInt(reader.readLine());
+        */
+        /*
+        System.out.println("A soma fica: "+(num1+num2));
+        System.out.println("A subtração fica: "+(num1-num2));
+        System.out.println("A multiplicação fica: "+(num1*num2));
+        System.out.println("A divisão fica: "+(num1/num2));
+        System.out.println("A resto fica: "+(num1%num2));
+        */
+        
+        /*Eercício
+        O prof João, de matemática, precisa de um programa para resolver uma expressão:
+        (x * 8 + y) - x + y / 100
+        */
+        /*
+        var expr = (num1 * 8 + num2) - num1 + num2 / 100;
+        
+        System.out.println("resultado do exercício da expressão: "+expr);
+        */
+        
+        //######################################################################
+        /*O mesmo que o anterior, mas voltado a usabilidade!
+          També usando o JOptionPane para capturar e mostrar valores
+        
+
+        JOptionPane.showMessageDialog(null, "Olá professor João. \nSabemos que precisa resolver uma expressão, \n(x * 8 + y) - x + y / 100 \nVamos ajudá-lo.");
+        
+        int x = Integer.parseInt(JOptionPane.showInputDialog("Informe valor de X: "));
+        int y = Integer.parseInt(JOptionPane.showInputDialog("Informe valor de Y: "));
+        
+        var expr = (x * 8 + y) - x + y / 100;
+        
+        JOptionPane.showMessageDialog(null, "Pronto, o resultado de:\n("+x+" * 8 + "+y+") - "+x+" + "+y+" / 100 \nResultado: "+expr);
+        
+        */
+        
+        //######################################################################
+        
+        /*O mesmo que o anterior, mas voltado a usabilidade!
+          També usando o Scanne para capturar e mostrar valores
+        
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("==========================================");
+        System.out.println("        Bem vindo professor João");
+        System.out.println("==========================================");
+        System.out.println("Expressão a ser resolvida:");
+        System.out.println("(x * 8 + y) - x + y / 100");
+        
+        System.out.println("Informe valor de X:");
+        int x = sc.nextInt();
+        
+        System.out.println("Informe valor de Y:");
+        int y = sc.nextInt();
+        var expr = (x * 8 + y) - x + y / 100;
+        System.out.println("("+x+" * 8 + "+y+") - "+x+" + "+y+" /100");
+        System.out.println("Resultado: "+expr);
+        */
+
+
+        //###################################
+        /*
+         * Aula de concatenação de strings
+
+        var moeda = 2.5;
+        var inteiro = 5;
+        var strNum = "10";
+
+        var res1 = moeda + inteiro + strNum;
+        var res2 = moeda + inteiro + Double.parseDouble(strNum); //convertendo string em double
+
+        System.out.println("resultado 1: " +  res1);
+        System.out.println("resultado 2: " +  res2);
+        */
+        //  CONversão de numeros double em real 
+        /*
+
+        double num = 1122334455.66;
+        NumberFormat formatoBR = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
+        String numBr = formatoBR.format(num);
+        System.out.println("Numero formatado: "+numBr);
+        
+        */
+
+
+        /*
+         * Paula tem petshop, e precisa de um sistemapara cadastrar clientes e seus animais.
+         * Cadastrar cliente, precisará de dados básicos. Para animais precisará de dados como peso e tamanho do animal.
+         * 
+         * calculo para macho:
+         *    (PesoDoAnimal * valorPorPeso) + (PesoDoAnimal * valorPorPeso) * 15 / 100
+         * calculo para fêmea:
+         *    (PesoDoAnimal * valorPorPeso) + (PesoDoAnimal * valorPorPeso) * 30 / 100
+         * 
+         * Faça uma usabildade agradável
+        */
+
+        //exercicio petshop
+        /*
+        int ValPeso = 10;
+        double preco = 0;
+
+        JOptionPane.showMessageDialog(null, "Bem vindo ao nosso Petshop. \nPor favor preencha nosso formulário para melhor atendê-lo.");
+        String nome = JOptionPane.showInputDialog("Seu nome: ");
+        String contato = JOptionPane.showInputDialog("Seu contato por favor: ");
+        int sx = Integer.parseInt(JOptionPane.showInputDialog("Qual o sexo do animal [1 - Macho / 2 - Femea]? "));
+
+        int peso = Integer.parseInt(JOptionPane.showInputDialog("Qual o peso do animal? "));
+
+        if(sx == 1){
+          preco = (peso * ValPeso) * 25 / 100;
+        }else if(sx == 2){
+          preco = (peso * ValPeso) * 30 / 100;
+        }
+
+        NumberFormat formatoBR = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
+        String numBr = formatoBR.format(preco);
+
+        JOptionPane.showMessageDialog(null, "Sr. "+nome+"\nO preço de trabalho para seu animal é de "+numBr+".");
+         */
